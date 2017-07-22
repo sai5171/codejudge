@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" type="image/png" href="/icon.png">
+		<link rel="stylesheet" type="text/css" href="/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="/jquery-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="/select2.css">
+		<link rel="stylesheet" type="text/css" href="/system.css">
+		<link rel="stylesheet" type="text/css" href="/main.css">
+		<link rel="stylesheet" type="text/css" href="/main1.css">
+		<link rel="stylesheet" type="text/css" href="/logo.css">
+		<style>
+			@font-face { font-family: heading; src: url('1.woff2'); }
+			@font-face { font-family: sub-heading; src: url('3.woff2'); }
+			@font-face { font-family: para; src: url('2.woff2'); }
+			.code {
+				color : #EA5C54 !important;
+				font-size : 16px;
+			}
+		</style>
+	</head>
+	<body>
+      <div id="section" style="padding:15px 20px 20px 20px;height:1160px;width:900px;">
+				<!-- problem name -->
+				<h1 style="font-family: heading;text-align:center;">Spot the Islands</h1><hr>
+				<br><p style="font-family:para;text-align:justify;line-height: 1.75;">Isha is a five-year-old girl who is on her first visit to Maldives with family. She is offered a helicopter ride from where a nice view of all islands is covered. Being an enthusiastic child, she wished to count the islands and list them in the decreasing order on the basis of their lengths. Can you please help the little girl in spotting the islands?</p>
+				<!-- input -->
+				<h2 style="font-family:sub-heading;text-align:left;">Input</h2>
+				<br><p style="font-family:para;text-align:justify;line-height: 1.75;">The first line of the input consists of two integers <code class="code">m</code> , <code class="code">3 &le; m &le; 10</code> and <code class="code">n</code> , <code class="code">3 &le; n &le; 10</code>. It is followed by a matrix of order m x n. The contents of the matrix can be either <code class="code">x</code> or <code class="code">o</code>. 'x' represents water whereas 'o' represents land.</p>
+				<!-- output -->
+				<h2 style="font-family:sub-heading;text-align:left;">Output</h2>
+				<br><p style="font-family:para;text-align:justify;line-height: 1.75;">The Output should contain the number of islands followed by the lengths of the islands from the biggest one to the smallest. If there is no island in the Ocean, then only 0 shall be printed.</p>
+				<!-- sample data -->
+				<br>
+				<table class="sample" summary="sample data">
+					<tbody>
+						<tr>
+							<th style="font-size:20px;">Sample Input 1</th>
+							<th style="font-size:20px;">Sample Output 1</th>
+						</tr>
+						<tr>
+							<td><pre style="font-size:14px;">10 10
+xxxxxxxxxx
+xxxoxxxxxx
+xxoooxxxxx
+xxxoxxxxxx
+xxxxxxxxxx
+xxxxoooxxx
+xxxxoooxxx
+xxxxoooxxx
+oooxxxxxxx
+xxxxxxxxxx</pre></td>
+							<td><pre style="font-size:14px;">3
+9
+5
+3</pre></td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr>
+							<th style="font-size:20px;">Sample Input 2</th>
+							<th style="font-size:20px;">Sample Output 2</th>
+						</tr>
+						<tr>
+							<td><pre style="font-size:14px;">10 10
+xxxxxxxxxx
+xxxxxxxxxx
+xxxxxxxxxx
+xxxxxxxxxx
+xxxxxxxxxx
+xxxxxxxxxx
+xxxxxxxxxx
+xxxxxxxxxx
+xxxxxxxxxx
+xxxxxxxxxx</pre></td>
+							<td><pre style="font-size:14px;">0</pre></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div style="padding:20px 0px 0px 0px;"></div>
+	</body>
+</html>

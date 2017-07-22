@@ -1,0 +1,75 @@
+.logo {
+  line-height: 1em;
+  margin: .3em 0;
+  border-radius: .3em;
+  background: #363636;
+  padding: .4em 1em .4em .6em;
+  display: inline-block;
+  border-top: .5em solid #fff;
+  color: #00B2D1;
+  font-family: 'Passion One', cursive;
+  letter-spacing: 0em;
+  font-size: 1.5em;
+  font-weight: bold;
+  position: absolute;;
+  box-shadow: 0 0 3em 0 rgba(70, 76, 88, .5);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+.logo > i {
+  font-style: normal;
+  animation: flash 1s infinite;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  98% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.logo:after {
+  font-size: 1em;
+  content: '';
+  background: #E95F47;
+  width: .25em;
+  height: .25em;
+  position: absolute;
+  border-radius: 50%;
+  top: -.375em;
+  left: .2em;
+  box-shadow: .35em 0 0 0 #464C58, .70em 0 0 0 #29C7CA;
+}
+/* latin-ext */
+@font-face {
+	font-family: 'Passion One';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Passion One'), local('PassionOne-Regular'), url(https://fonts.gstatic.com/s/passionone/v6/fY6k21F1QT2c_Oc3HRNDwiYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+	font-family: 'Passion One';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Passion One'), local('PassionOne-Regular'), url(https://fonts.gstatic.com/s/passionone/v6/fY6k21F1QT2c_Oc3HRNDwo4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}

@@ -1,0 +1,55 @@
+body {
+	background-image: url(background2.png);
+	background-repeat: repeat;
+/*
+	background-image: url(background.jpg);
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;*/
+}
+@font-face {
+    font-family: "My Custom Font";
+    src: url(font.woff2) format("truetype");
+
+}
+
+h1,h2,h3,h4,h5,h6,p {
+	font-family: "My Custom Font";
+}
+
+h3 {
+	text-align: left;
+	font-size: 36px;
+	padding: 0px 0px 0px 20px;
+	color: #33333D;
+}
+
+.header {
+	border-bottom: thick solid #CF494C;
+}
+
+section {
+    padding: 0px 0px 0px 0px;
+}
+
+#section {
+	background-color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	width: 1140px;
+	height: 440px;
+	padding: 5px 10px 10px 10px;
+	border-radius: 3px;
+   box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.footer {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-top: thick solid #CF494C;
+}

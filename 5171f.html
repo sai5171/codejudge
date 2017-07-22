@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" type="image/png" href="/icon.png">
+		<link rel="stylesheet" type="text/css" href="/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="/jquery-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="/select2.css">
+		<link rel="stylesheet" type="text/css" href="/system.css">
+		<link rel="stylesheet" type="text/css" href="/main.css">
+		<link rel="stylesheet" type="text/css" href="/main1.css">
+		<link rel="stylesheet" type="text/css" href="/logo.css">
+		<style>
+			@font-face { font-family: heading; src: url('1.woff2'); }
+			@font-face { font-family: sub-heading; src: url('3.woff2'); }
+			@font-face { font-family: para; src: url('2.woff2'); }
+			.code {
+				color : #EA5C54 !important;
+				font-size : 16px;
+			}
+		</style>
+	</head>
+	<body>
+      <div id="section" style="padding:15px 20px 20px 20px;height:1160px;width:900px;">
+				<!-- problem name -->
+				<h1 style="font-family: heading;text-align:center;">Mario</h1><hr>
+				<br><p style="font-family:para;text-align:justify;line-height: 1.75;">The Mushroom kingdom had a beautiful princess named Toadstool. One day, the kingdom was invaded by the Koopa kingdom and the princess was kidnapped. She was safely kept under the custody of the king Koopa himself. Now, the king of the mushroom kingdom declared that anyone who saves his daughter can marry her and become the prince of the mushroom kingdom. Apprised of this, Mario, the only prince of the maria kingdom is all set to rescue her but was unaware of the way to reach her. He is seeking your help to reach the King of the Koopa so as to rescue the princess.</p>
+				<!-- input -->
+				<h2 style="font-family:sub-heading;text-align:left;">Input</h2>
+				<br><p style="font-family:para;text-align:justify;line-height: 1.75;">Input will be given as a matrix of size <code class="code">m x n</code>,&nbsp;<code class="code">2 &le; m &le; 10</code>,&nbsp;<code class="code">2 &le; n &le; 10</code>. The location of Mario is defined by <code class="code">M</code> and <code class="code">T</code> defines the location of princess Toadstool. <code class="code">o</code> is an obstacle and Mario cannot pass through it. He can only pass through a path represented by <code class="code">x</code>.</p>
+				<!-- output -->
+				<h2 style="font-family:sub-heading;text-align:left;">Output</h2>
+				<br><p style="font-family:para;text-align:justify;line-height: 1.75;">Print a single word output <code class="code">Yes</code> if there is a possibility for Mario to rescue her if there exists a path between them. Print <code class="code">No</code> if no path exists between them.</p>
+				<!-- sample data -->
+				<br>
+				<table class="sample" summary="sample data">
+					<tbody>
+						<tr>
+							<th style="font-size:20px;">Sample Input 1</th>
+							<th style="font-size:20px;">Sample Output 1</th>
+						</tr>
+						<tr>
+							<td><pre style="font-size:14px;">oxxMo
+oxoox
+xxooo
+Toooo</pre></td>
+							<td><pre style="font-size:14px;">Yes</pre></td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr>
+							<th style="font-size:20px;">Sample Input 2</th>
+							<th style="font-size:20px;">Sample Output 2</th>
+						</tr>
+						<tr>
+							<td><pre style="font-size:14px;">oooo
+oooM
+oooo
+Tooo</pre></td>
+							<td><pre style="font-size:14px;">No</pre></td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr>
+							<th style="font-size:20px;">Sample Input 3</th>
+							<th style="font-size:20px;">Sample Output 3</th>
+						</tr>
+						<tr>
+							<td><pre style="font-size:14px;">oooo
+ooxM
+oxxo
+Tooo</pre></td>
+							<td><pre style="font-size:14px;">No</pre></td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- notes -->
+				<div class="footnotes">
+					<h2 style="font-family:sub-heading;text-align:left;">Note</h2>
+						<p style="font-family:para;text-align:justify;line-height: 1.75;">Mario can move either horizontally or vertically but cannot take cross paths.</p>
+				</div>
+			</div>
+			<div style="padding:20px 0px 0px 0px;"></div>
+	</body>
+</html>

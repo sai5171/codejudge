@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" type="image/png" href="/icon.png">
+		<link rel="stylesheet" type="text/css" href="/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="/jquery-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="/select2.css">
+		<link rel="stylesheet" type="text/css" href="/system.css">
+		<link rel="stylesheet" type="text/css" href="/main.css">
+		<link rel="stylesheet" type="text/css" href="/main1.css">
+		<link rel="stylesheet" type="text/css" href="/logo.css">
+		<style>
+			@font-face { font-family: heading; src: url('1.woff2'); }
+			@font-face { font-family: sub-heading; src: url('3.woff2'); }
+			@font-face { font-family: para; src: url('2.woff2'); }
+			.code {
+				color : #EA5C54 !important;
+				font-size : 16px;
+			}
+		</style>
+	</head>
+	<body>
+      <div id="section" style="padding:15px 20px 20px 20px;height:1160px;width:900px;">
+				<!-- problem name -->
+				<h1 style="font-family: heading;text-align:center;">Computer's must be Crazy</h1><hr>
+				<br><p style="font-family:para;text-align:justify;line-height: 1.75;">Steven Halim found a crazy computer. If a word is not typed for <code clas="code">c</code> consecutive seconds, everything that was typed so far would disappear.<br><br>To be more precise, if a word is typed at second 'm' and another word is typed at second 'n', then if m-n<=c, just the new word is appended to the already existing content. If m-n>c, then everything on the screen disappears and the word that's just typed appears on the screen.<br><br>For instance, if c=5 and words are typed at seconds 1, 3, 5, 8, 15, 19, 20. At second 8, there will be four words typed on the screen since the time gap between all those four words is less than or equal to 5 seconds. But after that, all the content will be erased since the time gap between the fifth word and the fourth word is 7 seconds which is greater than 5. Finally, at second twenty, there will be three words remaining on the screen.<br><br>So the task is you will be given the times when Halim the coder type the words, and you have to determine how many words remain on the screen after he finishes typing everything.</p>
+				<!-- input -->
+				<h2 style="font-family:sub-heading;text-align:left;">Input</h2>
+				<br><p style="font-family:para;text-align:justify;line-height: 1.75;">Input consists of two lines.<br>The first line consists of the integer <code clas="code">c</code> , <code class="code">1 &le; c &le; 100</code> and <code clas="code">n</code> , <code class="code">1 &le; n &le; 100</code>.<br>Next line consists of <code clas="code">n</code> integers  , <code class="code">1 &le; n<sub>i</sub> &le; 100</code>representing the seconds at which the words are typed.</p>
+				<!-- output -->
+				<h2 style="font-family:sub-heading;text-align:left;">Output</h2>
+				<br><p style="font-family:para;text-align:justify;line-height: 1.75;">The Output consists of a single integer indicating the number of words remaining on the screen at the end.</p>
+				<!-- sample data -->
+				<br>
+				<table class="sample" summary="sample data">
+					<tbody>
+						<tr>
+							<th style="font-size:20px;">Sample Input 1</th>
+							<th style="font-size:20px;">Sample Output 1</th>
+						</tr>
+						<tr>
+							<td><pre style="font-size:14px;">5 7
+1 3 5 8 15 19 20</pre></td>
+							<td><pre style="font-size:14px;">3</pre></td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr>
+							<th style="font-size:20px;">Sample Input 2</th>
+							<th style="font-size:20px;">Sample Output 2</th>
+						</tr>
+						<tr>
+							<td><pre style="font-size:14px;">3 11
+1 2 7 9 10 12 15 17 19 23 25</pre></td>
+							<td><pre style="font-size:14px;">2</pre></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div style="padding:20px 0px 0px 0px;"></div>
+	</body>
+</html>

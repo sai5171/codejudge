@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" type="image/png" href="/icon.png">
+		<link rel="stylesheet" type="text/css" href="/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="/jquery-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="/select2.css">
+		<link rel="stylesheet" type="text/css" href="/system.css">
+		<link rel="stylesheet" type="text/css" href="/main.css">
+		<link rel="stylesheet" type="text/css" href="/main1.css">
+		<link rel="stylesheet" type="text/css" href="/logo.css">
+		<style>
+			@font-face { font-family: heading; src: url('1.woff2'); }
+			@font-face { font-family: sub-heading; src: url('3.woff2'); }
+			@font-face { font-family: para; src: url('2.woff2'); }
+			.code {
+				color : #EA5C54 !important;
+				font-size : 16px;
+			}
+		</style>
+	</head>
+	<body>
+      <div id="section" style="padding:15px 20px 20px 20px;height:1160px;width:900px;">
+				<!-- problem name -->
+				<h1 style="font-family: heading;text-align:center;">Dice Game</h1><hr>
+				<br><p style="font-family:para;text-align:justify;line-height: 1.75;">Anup and Anuj are playing a dice game using two dice. Both of the players writes an integer from 1 to 12 and then the dice are thrown by both of them. The player having the minimum difference between the number written and the number appeared on the dice is declared to be the winner of the game.<br><br>Suppose Anup writes 7 and he actually got 10 when he throws the dice, where Anuj writes 6 and he got 2 when the dice is thrown by him. Here Anup is said to be the winner since he has the minimum difference(10-7=3) when compared with that of Anuj(6-2=4).<br><br>You are supposed to report which player wins. If both of them has the same difference, then the match is a draw.</p>
+				<!-- input -->
+				<h2 style="font-family:sub-heading;text-align:left;">Input</h2>
+				<br><p style="font-family:para;text-align:justify;line-height: 1.75;">The Input has two lines. The first line consists of two integers <code clas="code">a</code> , <code class="code">1 &le; a &le; 12</code> and <code clas="code">b</code> , <code class="code">1 &le; b &le; 12</code> representing the number written by Anup and the number appeared on his dice respectively. Next line has two integers <code clas="code">c</code> , <code class="code">1 &le; c &le; 12</code> and <code clas="code">d</code> , <code class="code">1 &le; d &le; 12</code> representing the number written by Anuj and the number appeared on his dice respectively.</p>
+				<!-- output -->
+				<h2 style="font-family:sub-heading;text-align:left;">Output</h2>
+				<br><p style="font-family:para;text-align:justify;line-height: 1.75;">The Output should contain:<br>(i) "Anup" if Anup wins.<br>(ii) "Anuj" if Anuj is the winner.<br>(iii) "Draw" if the match is a draw.</p>
+				<!-- sample data -->
+				<br>
+				<table class="sample" summary="sample data">
+					<tbody>
+						<tr>
+							<th style="font-size:20px;">Sample Input 1</th>
+							<th style="font-size:20px;">Sample Output 1</th>
+						</tr>
+						<tr>
+							<td><pre style="font-size:14px;">4 6
+3 7</pre></td>
+							<td><pre style="font-size:14px;">"Anup"</pre></td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr>
+							<th style="font-size:20px;">Sample Input 2</th>
+							<th style="font-size:20px;">Sample Output 2</th>
+						</tr>
+						<tr>
+							<td><pre style="font-size:14px;">2 3
+6 6</pre></td>
+							<td><pre style="font-size:14px;">"Anuj"</pre></td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr>
+							<th style="font-size:20px;">Sample Input 3</th>
+							<th style="font-size:20px;">Sample Output 3</th>
+						</tr>
+						<tr>
+							<td><pre style="font-size:14px;">6 6
+12 12</pre></td>
+							<td><pre style="font-size:14px;">"Draw"</pre></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div style="padding:20px 0px 0px 0px;"></div>
+	</body>
+</html>

@@ -1,0 +1,70 @@
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
+<files *.php>
+SetOutputFilter DEFLATE
+</files>
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^52\.74\.46\.56
+RewriteRule (.*) http://csearena.vidyanikethan.edu/$1 [R=301,L]
+
+DirectoryIndex home.php
+
+RewriteEngine on
+
+RewriteRule ^index?$ index.php
+
+RewriteRule ^admin_users_s?$ admin_users_s.php
+RewriteRule ^admin_users?$ admin_users.php
+RewriteRule ^admin_compile_arena?$ admin_compile_arena.php
+RewriteRule ^admin_contest?$ admin_contest.php
+RewriteRule ^admin_discuss?$ admin_discuss.php
+RewriteRule ^admin_practice?$ admin_practice.php
+RewriteRule ^admin_profile?$ admin_profile.php
+RewriteRule ^admin_resources?$ admin_resources.php
+RewriteRule ^admin_s?$ admin_s.php
+RewriteRule ^admin_standings?$ admin_standings.php
+RewriteRule ^admin?$ admin.php
+RewriteRule ^compile_arena_s_output?$ compile_arena_s_output.php
+RewriteRule ^compile_arena?$ compile_arena.php
+RewriteRule ^connect_s?$ connect_s.php
+RewriteRule ^contest_add_s?$ contest_add_s.php
+RewriteRule ^contest?$ contest.php
+RewriteRule ^discuss_s?$ discuss_s.php
+RewriteRule ^discuss?$ discuss.php
+RewriteRule ^error?$ error.php
+RewriteRule ^forgot?$ forgot-password.php
+RewriteRule ^forgotmail_s?$ forgotmail_s.php
+RewriteRule ^home_s?$ home_s.php
+RewriteRule ^home?$ home.php
+RewriteRule ^logout?$ logout.php
+RewriteRule ^mysubmissions?$ mysubmissions.php
+RewriteRule ^new_comments?$ new_comments.php
+RewriteRule ^new_post?$ new_post.php
+RewriteRule ^practice?$ practice.php
+RewriteRule ^practice_submission?$ practice_submission.php
+RewriteRule ^profile_s1?$ profile_s1.php
+RewriteRule ^profile_s2?$ profile_s2.php
+RewriteRule ^profile?$ profile.php
+RewriteRule ^ranklist?$ ranklist.php
+RewriteRule ^register?$ register.php
+RewriteRule ^resources?$ resources.php
+RewriteRule ^standings?$ standings.php
+RewriteRule ^submission?$ submission.php
+RewriteRule ^view_comments?$ view_comments.php
+RewriteRule ^view?$ view.php
+
+RewriteRule ^contest/(.*)?$ Ss13GSrN1Wpip30s3l9cLl1YGnOOQIJz2AsyiLcaxsiMl95el5/$1.pdf
+RewriteRule ^practice/(.*)?$ Xz2uuALrklKy5Id6Bfk37Bees8JaoZzYtqiORT736Iq2gtZIA9/$1.pdf
+
+RewriteRule ^404/?$ error.php [NC]
+ErrorDocument 404 /404
+ErrorDocument 403 /404

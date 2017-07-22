@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "My Custom Bold Font";
+    src: url(font1.woff2) format("truetype");
+}
+
+li a {
+	font-family: "My Custom Bold Font";
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:transparent;
+    /*background-color: #33333D;*/
+}
+
+li {
+    float: left;
+}
+
+li a {
+		display: block;
+		color: #F0F3F4;
+		text-align: center;
+		padding: 25px 15px 10px 15px;
+		text-decoration: none;
+		font-size: 14px;
+}
+li .list_hover:hover {
+  color: #CF494C;
+	text-decoration:none;
+	border-top:thick solid #CF494C;
+}
+
+a {
+	font-family: "My Custom Font";
+}
