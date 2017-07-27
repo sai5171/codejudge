@@ -233,6 +233,23 @@
 		<!--  post ends -->
 		<div style="padding: 75px 0px 0px 0px;"></div>
 		<div class="footer" style="position: relative;bottom:0px;">
+			<div style="position: relative;right: 0;bottom: 0;left: 0;height: 50px;background-color: #33333D;padding-top: 10px;padding-bottom: 10px;">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="footer-powered col-md-12" style="text-align:center;">
+							<h4 style="display:inline;">Designed &amp; Developed by&nbsp;</h4>
+							<h4 style="display:inline;"><a href="https://www.facebook.com/S5171" target="_blank">Sai Kiran</a></h4>
+							<h4 style="display:inline;"><img src="sai.jpg" style="margin-top: -7px;height: 45px;width: 45px;border: 1px solid white;border-radius: 100%;"></h4>
+							<span style="color:#CF494C;">&nbsp;|&nbsp;</span>
+							<h4 style="display:inline;"><a href="" target="_blank">Edala Lokesh</a></h4>
+							<h4 style="display:inline;"><img src="lokesh.jpg" style="margin-top: -7px;height: 45px;width: 45px;border: 1px solid white;border-radius: 100%;"></h4>
+							<span style="color:#CF494C;">&nbsp;|&nbsp;</span>
+							<h4 style="display:inline;"><a href="https://www.facebook.com/vedaprakash.cherukuru.5" target="_blank">Veda Prakash</a></h4>
+							<h4 style="display:inline;"><img src="veda.jpg" style="margin-top: -7px;height: 45px;width: 45px;border: 1px solid white;border-radius: 100%;"></h4>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
