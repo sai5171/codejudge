@@ -38,7 +38,7 @@ $('input[type="submit"]').click(function(){
           if(u=='codeit@vidyanikethan.asia')
             window.location.replace("admin");
           else
-            window.location.replace("practice");
+            window.location.replace("welcome");
         }
         else
         {

@@ -64,7 +64,8 @@
 		?>
 		<div id="section" style="width: 75vw;height:90vh;">
 			<div class="logo">&gt;<i>_</i></div>
-			<h3 style="padding:0px 0px 0px 100px;">Register for Cse-Arena</h3>
+			<h3 style="padding:0px 0px 0px 100px;">Registration closed.</h3>
+			<!--
 			<p style="font-size: 16px;background:linear-gradient(60deg, rgba(66,35,51,0.7), rgba(157,75,53,0.7), rgba(61,53,68,0.7));">
 				Note :- Pay the registration free through Internet Banking or Bank Counter deposit to following Bank Account. Registration Fee : Rs. 100/- per participant.<br>
 				<table style="width:30%;font-size: 16px;">
@@ -121,6 +122,7 @@
 					</div>
 				</form>
 			</div>
+		-->
 		</div>
 		<div style="padding: 75px 0px 0px 0px;"></div>
 		<!--<div class="footer">

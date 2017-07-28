@@ -34,6 +34,7 @@
 				$con =  mysqli_connect($servername, $username, $password,$database);
 				$email = $_SESSION['email'];
 				$extract= mysqli_query($con,"select image from users where email='$email'");
+				mysqli_close($con);
 				$row = mysqli_fetch_assoc($extract);
 				if($row['image']==NULL)
 				{
@@ -131,6 +132,7 @@
 				<li style="float:left;padding: 0px 0px 0px 0px;"><a class="list_hover" href="/admin_practice">PRACTICE</a></li>
 				<li style="float:left;padding: 0px 0px 0px 0px;"><a class="list_hover" href="/admin_contest">CONTEST</a></li>
 				<li style="float:left;padding: 0px 0px 0px 0px;"><a class="list_hover" href="/admin_standings">STANDINGS</a></li>
+				<li style="float:left;padding: 0px 0px 0px 0px;"><a class="list_hover" href="/admin_contest_submissions">SUBMISSIONS</a></li>
 				<li style="float:left;padding: 0px 0px 0px 0px;"><a class="list_hover" href="/admin_compile_arena">COMPILE ARENA</a></li>
 				<li style="float:right;padding:0px 15% 0px 0px;">
 					<div class="dp" onclick="myFunction()"></div>
@@ -323,6 +325,7 @@
 				else {
 					echo "<h3>Contest completed</h3>";
 				}
+				mysqli_close($con);
 			?>
 			<br>
 			<br>
@@ -367,6 +370,7 @@
 						echo "</tr>";
 					}
 				}
+				mysqli_close($con);
 			?>
 			</table>
 			<br><br><br>

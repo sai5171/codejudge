@@ -43,6 +43,7 @@
 						echo "</div>";
 				echo "</div>";
 		echo "</div>";
+		mysqli_close($con);
 	}
 ?>
 <script type="text/javascript">

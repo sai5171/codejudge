@@ -11,4 +11,5 @@
   $date = date('Y-m-d H:i:s');
   $comment = mysqli_real_escape_string($con, $comment);
   mysqli_query($con,"INSERT INTO comments VALUES ('','$post_id','$email','$comment','$date')");
+  mysqli_close($con);
 ?>

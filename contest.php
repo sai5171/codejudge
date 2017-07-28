@@ -41,6 +41,7 @@
 				$con =  mysqli_connect($servername, $username, $password,$database);
 				$email = $_SESSION['email'];
 				$extract= mysqli_query($con,"select image from users where email='$email'");
+				mysqli_close($con);
 				$row = mysqli_fetch_assoc($extract);
 				if($row['image']==NULL)
 				{
@@ -125,7 +126,8 @@
 		<nav>
 			<ul>
 				<li style="float:left;padding: 0px 0px 0px 0px;"><a style="padding: 0px 15px 5px 15px;" href=""><div class="logo">&gt;<i>_</i></div></a></li>
-				<li style="float:left;padding: 0px 0px 0px 10%;"><a class="list_hover" href="/resources">RESOURCES</a></li>
+				<li style="float:left;padding: 0px 0px 0px 10%;"><a class="list_hover" href="/welcome">WELCOME</a></li>
+				<li style="float:left;padding: 0px 0px 0px 0px;"><a class="list_hover" href="/resources">RESOURCES</a></li>
 				<li style="float:left;padding: 0px 0px 0px 0px;"><a class="list_hover" href="/discuss">DISCUSS</a></li>
 				<li style="float:left;padding: 0px 0px 0px 0px;"><a class="list_hover" href="/practice">PRACTICE</a></li>
 				<li style="float:left;padding: 0px 0px 0px 0px;"><a class="list_hover" href="/contest">CONTEST</a></li>
@@ -154,6 +156,7 @@
 			$count = mysqli_num_rows($result);
 			$email=$_SESSION['email'];
 			$result1 = mysqli_query($con,"SELECT * FROM standings where email='$email';");
+			mysqli_close($con);
 			$count1 = mysqli_num_rows($result1);
 			if($count == 0)
 			{
@@ -307,7 +310,13 @@
 				$stop_time = strtotime(fread($stop_file,filesize("$@!1stop.txt")));
 				fclose($stop_file);
 				$present_time = strtotime(date("Y-m-d\TH:i:s"));
+				$servername = "127.0.0.1";
+				$username = "root";
+				$password = "$@!Sai5171";
+				$database = "codejudge";
+				$con = mysqli_connect($servername, $username, $password,$database);
 				$result = mysqli_query($con,"SELECT * FROM problems");
+				mysqli_close($con);
 				$count=mysqli_num_rows($result);
 				if( $count == 0 ) {
 					echo "<h3>Contest not yet created </h3>";
@@ -366,6 +375,7 @@
 						echo "</tr>";
 					}
 				}
+				mysqli_close($con);
 			?>
 			</table>
 			<br><br><br>

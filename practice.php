@@ -39,6 +39,7 @@
 				$con =  mysqli_connect($servername, $username, $password,$database);
 				$email = $_SESSION['email'];
 				$extract= mysqli_query($con,"select image from users where email='$email'");
+				mysqli_close($con);
 				$row = mysqli_fetch_assoc($extract);
 				if($row['image']==NULL)
 				{
@@ -123,7 +124,8 @@
 		<nav>
 			<ul>
 				<li style="float:left;padding: 0px 0px 0px 0px;"><a style="padding: 0px 15px 5px 15px;" href=""><div class="logo">&gt;<i>_</i></div></a></li>
-				<li style="float:left;padding: 0px 0px 0px 10%;"><a class="list_hover" href="/resources">RESOURCES</a></li>
+				<li style="float:left;padding: 0px 0px 0px 10%;"><a class="list_hover" href="/welcome">WELCOME</a></li>
+				<li style="float:left;padding: 0px 0px 0px 0px;"><a class="list_hover" href="/resources">RESOURCES</a></li>
 				<li style="float:left;padding: 0px 0px 0px 0px;"><a class="list_hover" href="/discuss">DISCUSS</a></li>
 				<li style="float:left;padding: 0px 0px 0px 0px;"><a class="list_hover" href="/practice">PRACTICE</a></li>
 				<li style="float:left;padding: 0px 0px 0px 0px;"><a class="list_hover" href="/contest">CONTEST</a></li>
@@ -208,6 +210,7 @@
 					$next = $page + 1;
 					echo "<a id='next' href='/practice?page=$next' class='btn btn-default' style='height:36px;line-height:36px;border:1px solid #E7E7E8;float:right;cursor:pointer;color:#898992;' role='button'>Next</a>";
 				}
+				mysqli_close($con);
 			?>
 			<!---->
 		</div>
@@ -249,6 +252,7 @@
 				$('table').css("width","75%");
 				$('table').html(output);
 				$('table').show();
+				$('#section').css({"height":$('table').height()+700});
 			}
 		});
 	});

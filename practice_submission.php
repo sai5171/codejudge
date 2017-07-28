@@ -1163,4 +1163,5 @@
 	}
 	shell_exec("chmod 777 -R $name.out");
 	shell_exec("rm $name.out");
+	mysqli_close($con);
 ?>

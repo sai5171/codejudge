@@ -1,19 +1,30 @@
-AddOutputFilterByType DEFLATE text/plain
-AddOutputFilterByType DEFLATE text/html
-AddOutputFilterByType DEFLATE text/xml
-AddOutputFilterByType DEFLATE text/css
-AddOutputFilterByType DEFLATE application/xml
-AddOutputFilterByType DEFLATE application/xhtml+xml
-AddOutputFilterByType DEFLATE application/rss+xml
 AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+AddOutputFilterByType DEFLATE application/x-font
+AddOutputFilterByType DEFLATE application/x-font-opentype
+AddOutputFilterByType DEFLATE application/x-font-otf
+AddOutputFilterByType DEFLATE application/x-font-truetype
+AddOutputFilterByType DEFLATE application/x-font-ttf
 AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE font/opentype
+AddOutputFilterByType DEFLATE font/otf
+AddOutputFilterByType DEFLATE font/ttf
+AddOutputFilterByType DEFLATE image/svg+xml
+AddOutputFilterByType DEFLATE image/x-icon
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/javascript
+AddOutputFilterByType DEFLATE text/plain
 
 <files *.php>
 SetOutputFilter DEFLATE
 </files>
 
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^52\.74\.46\.56
+RewriteCond %{HTTP_HOST} ^202\.53\.67\.98
 RewriteRule (.*) http://csearena.vidyanikethan.edu/$1 [R=301,L]
 
 DirectoryIndex home.php
@@ -22,6 +33,7 @@ RewriteEngine on
 
 RewriteRule ^index?$ index.php
 
+RewriteRule ^admin_contest_submissions?$ admin_contest_submissions.php
 RewriteRule ^admin_users_s?$ admin_users_s.php
 RewriteRule ^admin_users?$ admin_users.php
 RewriteRule ^admin_compile_arena?$ admin_compile_arena.php
@@ -61,6 +73,7 @@ RewriteRule ^standings?$ standings.php
 RewriteRule ^submission?$ submission.php
 RewriteRule ^view_comments?$ view_comments.php
 RewriteRule ^view?$ view.php
+RewriteRule ^welcome?$ welcome.php
 
 RewriteRule ^contest/(.*)?$ Ss13GSrN1Wpip30s3l9cLl1YGnOOQIJz2AsyiLcaxsiMl95el5/$1.pdf
 RewriteRule ^practice/(.*)?$ Xz2uuALrklKy5Id6Bfk37Bees8JaoZzYtqiORT736Iq2gtZIA9/$1.pdf

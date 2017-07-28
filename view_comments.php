@@ -34,6 +34,7 @@
   }
   echo "$@!";
   echo $newcom_id;
+  mysqli_close($con);
 ?>
 <?php
 	function timeAgo($time_ago)

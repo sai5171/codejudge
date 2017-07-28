@@ -33,6 +33,7 @@
 				$con =  mysqli_connect($servername, $username, $password,$database);
 				$email = $_SESSION['email'];
 				$extract= mysqli_query($con,"select image from users where email='$email'");
+				mysqli_close($con);
 				$row = mysqli_fetch_assoc($extract);
 				if($row['image']==NULL)
 				{
@@ -130,6 +131,7 @@
 				<li style="float:left;padding: 0px 0px 0px 0px;"><a class="list_hover" href="/admin_practice">PRACTICE</a></li>
 				<li style="float:left;padding: 0px 0px 0px 0px;"><a class="list_hover" href="/admin_contest">CONTEST</a></li>
 				<li style="float:left;padding: 0px 0px 0px 0px;"><a class="list_hover" href="/admin_standings">STANDINGS</a></li>
+				<li style="float:left;padding: 0px 0px 0px 0px;"><a class="list_hover" href="/admin_contest_submissions">SUBMISSIONS</a></li>
 				<li style="float:left;padding: 0px 0px 0px 0px;"><a class="list_hover" href="/admin_compile_arena">COMPILE ARENA</a></li>
 				<li style="float:right;padding:0px 15% 0px 0px;">
 					<div class="dp" onclick="myFunction()"></div>
@@ -206,6 +208,7 @@
 					$next = $page + 1;
 					echo "<a id='next' href='/admin_users?page=$next' class='btn btn-default' style='height:36px;line-height:36px;border:1px solid #E7E7E8;float:right;cursor:pointer;color:#898992;' role='button'>Next</a>";
 				}
+				mysqli_close($con);
 			?>
 		</div>
 		<div style="padding: 75px 0px 0px 0px;"></div>

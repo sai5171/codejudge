@@ -91,6 +91,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','0','Time Limit Exceeded')");
 		}
 		return 0;
 	}
@@ -117,6 +118,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','0','Run Time Error')");
 		}
 		return 0;
 	}
@@ -143,6 +145,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','0','Wrong Answer')");
 		}
 		return 0;
 	}
@@ -193,6 +196,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','1','Time Limit Exceeded')");
 		}
 		return 0;
 	}
@@ -219,6 +223,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','1','Run Time Error')");
 		}
 		return 0;
 	}
@@ -245,6 +250,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','1','Wrong Answer')");
 		}
 		return 0;
 	}
@@ -295,6 +301,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','2','Time Limit Exceeded')");
 		}
 		return 0;
 	}
@@ -321,6 +328,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','2','Run Time Error')");
 		}
 		return 0;
 	}
@@ -347,6 +355,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','2','Wrong Answer')");
 		}
 		return 0;
 	}
@@ -397,6 +406,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','3','Time Limit Exceeded')");
 		}
 		return 0;
 	}
@@ -423,6 +433,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','3','Run Time Error')");
 		}
 		return 0;
 	}
@@ -449,6 +460,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','3','Wrong Answer')");
 		}
 		return 0;
 	}
@@ -499,6 +511,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','4','Time Limit Exceeded')");
 		}
 		return 0;
 	}
@@ -525,6 +538,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','4','Run Time Error')");
 		}
 		return 0;
 	}
@@ -551,6 +565,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','4','Wrong Answer')");
 		}
 		return 0;
 	}
@@ -601,6 +616,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','5','Time Limit Exceeded')");
 		}
 		return 0;
 	}
@@ -627,6 +643,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','5','Run Time Error')");
 		}
 		return 0;
 	}
@@ -653,6 +670,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','5','Wrong Answer')");
 		}
 		return 0;
 	}
@@ -703,6 +721,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','6','Time Limit Exceeded')");
 		}
 		return 0;
 	}
@@ -729,6 +748,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','6','Run Time Error')");
 		}
 		return 0;
 	}
@@ -755,6 +775,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','6','Wrong Answer')");
 		}
 		return 0;
 	}
@@ -805,6 +826,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','7','Time Limit Exceeded')");
 		}
 		return 0;
 	}
@@ -831,6 +853,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','7','Run Time Error')");
 		}
 		return 0;
 	}
@@ -857,6 +880,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','7','Wrong Answer')");
 		}
 		return 0;
 	}
@@ -907,6 +931,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','8','Time Limit Exceeded')");
 		}
 		return 0;
 	}
@@ -933,6 +958,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','8','Run Time Error')");
 		}
 		return 0;
 	}
@@ -959,6 +985,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','8','Wrong Answer')");
 		}
 		return 0;
 	}
@@ -1009,6 +1036,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','9','Time Limit Exceeded')");
 		}
 		return 0;
 	}
@@ -1035,6 +1063,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','9','Run Time Error')");
 		}
 		return 0;
 	}
@@ -1061,6 +1090,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','9','Wrong Answer')");
 		}
 		return 0;
 	}
@@ -1111,6 +1141,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','10','Time Limit Exceeded')");
 		}
 		return 0;
 	}
@@ -1137,6 +1168,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','10','Run Time Error')");
 		}
 		return 0;
 	}
@@ -1163,6 +1195,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','10','Wrong Answer')");
 		}
 		return 0;
 	}
@@ -1213,6 +1246,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','11','Time Limit Exceeded')");
 		}
 		return 0;
 	}
@@ -1239,6 +1273,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','11','Run Time Error')");
 		}
 		return 0;
 	}
@@ -1265,6 +1300,7 @@
 			$val=$row[$pb_name."_wr"];
 			$val++;
 			mysqli_query($con,"UPDATE standings set ".$pb_name."_wr=$val WHERE email='$email'");
+			mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','11','Wrong Answer')");
 		}
 		return 0;
 	}
@@ -1294,7 +1330,9 @@
 		mysqli_query($con,"UPDATE standings set score='$score' WHERE email='$email'");
 		$penalty=+$row['penalty']+($row[$pb_name."_wr"]*20)+$min;
 		mysqli_query($con,"UPDATE standings set penalty=$penalty WHERE email='$email'");
+		mysqli_query($con,"INSERT INTO contest_submissions VALUES('$email','$pb_name','11','Accepted')");
 	}
 	shell_exec("chmod 777 -R $name.out");
 	shell_exec("rm $name.out");
+	mysqli_close($con);
 ?>

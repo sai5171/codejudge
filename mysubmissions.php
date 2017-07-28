@@ -30,4 +30,5 @@
     echo "</tr>";
     $i++;
   }
+  mysqli_close($con);
 ?>

@@ -11,6 +11,7 @@
     header("location: error");
   $email = $_SESSION['email'];
   $result = mysqli_query($con,"SELECT * FROM submissions where email='$email' and submissions_id=$sid");
+  mysqli_close($con);
   $count = mysqli_num_rows($result);
   echo "
   <html>

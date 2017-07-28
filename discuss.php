@@ -40,6 +40,7 @@
 				$con =  mysqli_connect($servername, $username, $password,$database);
 				$email = $_SESSION['email'];
 				$extract= mysqli_query($con,"select image from users where email='$email'");
+				mysqli_close($con);
 				$row = mysqli_fetch_assoc($extract);
 				if($row['image']==NULL)
 				{
@@ -71,6 +72,7 @@
 				$con =  mysqli_connect($servername, $username, $password,$database);
 				$email = $_SESSION['email'];
 				$extract= mysqli_query($con,"select image from users where email='$email'");
+				mysqli_close($con);
 				$row = mysqli_fetch_assoc($extract);
 				if($row['image']==NULL)
 				{
@@ -166,7 +168,8 @@
 		<nav>
 			<ul>
 				<li style="float:left;padding: 0px 0px 0px 0px;"><a style="padding: 0px 15px 5px 15px;" href=""><div class="logo">&gt;<i>_</i></div></a></li>
-				<li style="float:left;padding: 0px 0px 0px 10%;"><a class="list_hover" href="/resources">RESOURCES</a></li>
+				<li style="float:left;padding: 0px 0px 0px 10%;"><a class="list_hover" href="/welcome">WELCOME</a></li>
+				<li style="float:left;padding: 0px 0px 0px 0px;"><a class="list_hover" href="/resources">RESOURCES</a></li>
 				<li style="float:left;padding: 0px 0px 0px 0px;"><a class="list_hover" href="/discuss">DISCUSS</a></li>
 				<li style="float:left;padding: 0px 0px 0px 0px;"><a class="list_hover" href="/practice">PRACTICE</a></li>
 				<li style="float:left;padding: 0px 0px 0px 0px;"><a class="list_hover" href="/contest">CONTEST</a></li>
@@ -248,6 +251,7 @@
 							echo "</div>";
 					echo "</div>";
 				}
+				mysqli_close($con);
 			?>
 		</div>
 		<div id='see_more' style="position:relative;margin-left: auto;margin-right: auto;margin-top: 30px;width: 900px;">
